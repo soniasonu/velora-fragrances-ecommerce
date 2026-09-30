@@ -1,0 +1,8 @@
+
+/* Login/signup error message */
+.account-error {
+  color: #ff6b9d;
+  font-size: 13px;
+  margin-bottom: 15px;
+  text-align: center;
+}

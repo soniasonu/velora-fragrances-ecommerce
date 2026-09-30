@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velora Fragrances| Luxury Perfumes</title>
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="panels.css">
+
+</head>
+
+<body>
+    <div class="video-container">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="image/Smoke_Smok.mp4" type="video/mp4">
+            your browser does not support the video tag
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="logo">VELORA <span>FRAGRANCES</span></a>
+                <div class="nav-links" id="navLinks">
+                    <a href="#home" class="active">Home</a>
+                    <a href="collections.html">Shop</a>
+                    <a href="#categories">Collections</a>                              <!--this-->
+                    <a href="#bestsellers">Best Sellers</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="nav-icons">
+                    <a href="#" class="nav-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" class="nav-icon cart-icon"><i class="fa-solid fa-bag-shopping"></i><span
+                            class="cart-count">0</span></a>
+                    <a href="#" class="nav-icon"><i class="fa-solid fa-user"></i></a>
+                    <button class="hamburger" id="hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="gradient-heading">Discover Your Signature <span>Perfume</span></h1>
+                <p class="hero-subtitle">Experience the essence of luxury with our exclusive Collection...</p>
+                <div class="hero-buttons">
+                    <a href="collections.html" class="btn btn-primary">Shop Now</a>
+                    <a href="#categories" class="btn btn-secondary">Explore Collections</a>
+                </div>
+            </div>
+            <div class="perfume-bottle">
+                <img src="image/s7.png" alt="Luxury Perfume Bottle">
+            </div>
+        </section>
+
+        <section class="categories" id="categories">
+            <h2 class="section-title">Featured <span>Categories</span></h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-person"></i>
+                    </div>
+                    <h3>For Him</h3>
+                    <p>Bold fragrances for the modern man</p>
+                    <!--<a href="#" class="category-link">Explore <i class="fa-solid fa-arrow-right"></i></a>-->
+                    <a href="collections.html?category=men" class="category-link">Explore <i class="fa-solid fa-arrow-right"></i></a>            <!--this-->
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-female"></i>
+                    </div>
+                    <h3>For Her</h3>
+                    <p>Elegant scents that express your individuality</p>
+                    <!--<a href="#" class="category-link">Explore <i class="fa-solid fa-arrow-right"></i></a>-->
+                    <a href="collections.html?category=women" class="category-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3>Oud Collection</h3>
+                    <p>Timeless fragrances designed for everyone</p>
+                    <!--<a href="#" class="category-link">Explore <i class="fa-solid fa-arrow-right"></i></a>-->
+                    <a href="collections.html?category=oud" class="category-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+                    <h3>Gift Sets</h3>
+                    <p>Perfect presents, beautifully packaged</p>
+                    <!--<a href="#" class="category-link">Explore <i class="fa-solid fa-arrow-right"></i></a>-->
+                    <a href="collections.html?category=gift" class="category-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="product" id="bestsellers">
+            <h2 class="section-title">Best <span>Sellers</span></h2>
+            <div class="product-grid" id="bestSellersGrid">
+                <!--
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="image/p1.jpg" alt="Midnight Noir">
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-product="Midnight Noir">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Midnight Noir</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            <span>4.5</span>
+                        </div>
+                        <p class="product-desc">A mysterious blend of dark spices and amber</p>
+                        <p class="price">$189.00</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="image/s6.jpg" alt="Golden Essence">
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-product="Golden Essence">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Golden Essence</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                        <p class="product-desc">Luxurious blend of vanilla, saffron and oud</p>
+                        <p class="price">$245.00</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="image/a5.jpg" alt="Royal Oud">
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-product="Royal Oud">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Royal Oud</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.0</span>
+                        </div>
+                        <p class="product-desc">Rare oud wood with rose and sandalwood</p>
+                        <p class="price">$320.00</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="image/a2.jpg" alt="Velvet Blossom">
+                        <div class="product-overlay">
+                            <button class="add-to-cart" data-product="Velvet Blossom">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Velvet Blossom</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            <span>4.5</span>
+                        </div>
+                        <p class="product-desc">Floral bouquet with jasmine and peony</p>
+                        <p class="price">$175.00</p>
+                    </div>
+                </div>-->
+            </div>
+        </section>
+        <section class="special-offer" id="collections">
+            <div class="offer-content">
+                <h2 class="offer-title">Limited Time <span>Offer</span></h2>
+                <p class="offer-text">Get 20% off on all Collections.</p>
+                <p class="offer-expiry">offer valid until December 31, 2026</p>
+                <a href="collections.html" class="btn btn-primary">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="why-us">
+            <h2 class="section-title">Why <span>Choose Us</span></h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3>Premium Ingredients</h3>
+                    <p>Finest natural and high-quality ingredients, carefully selected for exceptional fragrances</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                    <h3>Expert Craftsmanship</h3>
+                    <p>Crafted by master perfumers with decades of Experience</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-shipping-fast"></i>
+                    </div>
+                    <h3>Global Shipping</h3>
+                    <p>Free worldwide shipping over $150 + luxury packaging</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3>Award Winning</h3>
+                    <p>Recognized by International Fragrance Foundation</p>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <h2 class="section-title">About <span>Velora</span></h2>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="image/a.jpg" alt="Perfume crafting at Velora Fragrances">
+                </div>
+                <div class="about-content">
+                    <h3>Crafting Scents That Tell Your Story</h3>
+                    <p>Since 1995, Velora Fragrances has blended rare ingredients from around the world into perfumes made to be remembered. Every bottle is created by master perfumers who care about balance, depth and detail.</p>
+                    <p>From bold woods to delicate florals, our collections are made for people who want a scent that feels personal, not ordinary.</p>
+                    <div class="about-stats">
+                        <div><h4>30+</h4><span>Years of Craft</span></div>
+                        <div><h4>50+</h4><span>Unique Scents</span></div>
+                        <div><h4>20+</h4><span>Countries Served</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2 class="section-title">Client <span>Testimonials</span></h2>
+            <div class="testimonial-container">
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <p>A scent worth remembering</p>
+                            <div class="Client-info">
+                                <h4>Alexandra M.</h4>
+                                <p>Lifestyle Influencer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <p>Authentic oud collection praise</p>
+                            <div class="client-info">
+                                <h4>James L.</h4>
+                                <p>Fragrance Connoisseur</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <p>Excellent customer service + gift help</p>
+                            <div class="Client-info">
+                                <h4>Michael R.</h4>
+                                <p>Satisfied Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <button class="testimonial-next"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>First to know about new collections, offers, secrets</p>
+                <form id="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="privacy-policy" required>
+                        <label for="privacy-policy">I agree to the privacy policy</label>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-pin"></i>
+                        <div>
+                            <h3>Visit Our Boutique</h3>
+                            <p>123 Luxury Avenue, Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>info@VeloraFragrances.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <h3>Opening Hours</h3>
+                            <p>Mon-Sat: 10am - 8pm</p>
+                            <p>Sunday: 12pm - 6pm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form action="" id="contactform">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="#" class="logo">VELORA <span>Fragrances</span></a>
+                    <p>Crafting luxury fragrances that tell your unique story since 1995.</p>
+                    <p>Leave a lasting impression</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="collections.html">Shop</a></li>
+                        <li><a href="#categories">Collections</a></li>
+                        <li><a href="#bestsellers">Best Sellers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping policy</a></li>
+                        <li><a href="#">Return policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for exclusive offers and updates.</p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 VeloraFragrances. All rights reserved. | Designed with 🩷 for perfume lovers</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

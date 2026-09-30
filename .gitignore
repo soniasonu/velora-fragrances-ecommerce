@@ -1,0 +1,21 @@
+# Environment & secrets — never commit real credentials
+.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+db.sqlite3
+
+# Django
+*.log
+staticfiles/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

@@ -1,0 +1,288 @@
+[
+  {
+    "category": "men",
+    "image": "image/him/d8.jpg",
+    "name": "Sauvage Eau Forte (Dior)",
+    "description": "An intense, wild fragrance of spice, vanilla and deep amber",
+    "price": "175.00",
+    "notes": "amber, spice, vanilla",
+    "featured": true,
+    "is_bestseller": false
+  },
+  {
+    "category": "men",
+    "image": "image/him/d2.webp",
+    "name": "YCZ Charm Unfolds, Marine Perfume",
+    "description": "A cool oceanic breeze of sea salt, mint and clean woods",
+    "price": "79.00",
+    "notes": "wood",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "men",
+    "image": "image/him/d6.jpg",
+    "name": "Zellbury Grey Eau de Parfum",
+    "description": "A modern, understated mix of cool mist, cedar and mineral notes",
+    "price": "89.00",
+    "notes": "cedar",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "men",
+    "image": "image/him/d5.webp",
+    "name": "Zellbury Black Eau de Parfum",
+    "description": "A mysterious blend of dark woods and smoldering amber",
+    "price": "100.00",
+    "notes": "wood, amber",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "men",
+    "image": "image/him/d1.webp",
+    "name": "Veleno Eau de Parfum",
+    "description": "A bold, velvety blend of dark berries and warm musk",
+    "price": "99.00",
+    "notes": "musk, berries",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "men",
+    "image": "image/him/d4.webp",
+    "name": "Wild Stone Edge Eau de Parfum",
+    "description": "An icy aquatic rush with a sharp, energetic finish",
+    "price": "145.00",
+    "notes": "aquatic",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "men",
+    "image": "image/him/d11.jpg",
+    "name": "Zellbury Rage Pour Homme",
+    "description": "A radiant, high-energy blend of golden amber, warm spice and smooth woods",
+    "price": "109.00",
+    "notes": "wood, amber, spice",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "women",
+    "image": "image/her/h1.jpg",
+    "name": "Bellavita Date Woman",
+    "description": "A romantic bouquet of velvety rose petals and soft musk",
+    "price": "155.00",
+    "notes": "musk, rose",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "women",
+    "image": "image/her/h3.webp",
+    "name": "be! Floral Drift",
+    "description": "A crisp, dewy burst of apple blossom, green leaves and fresh spring air",
+    "price": "49.00",
+    "notes": "fresh, green",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "women",
+    "image": "image/her/h2.webp",
+    "name": "Miss Dior Eau de Parfum",
+    "description": "A graceful, sparkling blend of fresh blossoms and delicate ribbons of musk",
+    "price": "135.00",
+    "notes": "musk, fresh",
+    "featured": true,
+    "is_bestseller": false
+  },
+  {
+    "category": "women",
+    "image": "image/her/h4.jpg",
+    "name": "Vaginé Respectée Sagittarius",
+    "description": "A warm, radiant blend of rose, amber and starlit spice",
+    "price": "169.00",
+    "notes": "amber, spice, rose",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "women",
+    "image": "image/her/h.webp",
+    "name": "Versace Crystal Noir",
+    "description": "A sensual, mysterious blend of ginger, white gardenia and warm amber",
+    "price": "120.00",
+    "notes": "amber",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "women",
+    "image": "image/her/h6.jpg",
+    "name": "Secret Temptation Romance",
+    "description": "A velvety, enchanting blend of purple hyacinth, soft musk and warm vanilla",
+    "price": "100.00",
+    "notes": "musk, vanilla",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "women",
+    "image": "image/her/h5.avif",
+    "name": "Skinn Celeste",
+    "description": "A bright, radiant blend of juicy pink grapefruit, white jasmine blossom and creamy sandalwood",
+    "price": "148.00",
+    "notes": "wood, jasmine, sandalwood",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "oud",
+    "image": "image/oud/y2.webp",
+    "name": "Lattafa Khamrah Waha",
+    "description": "A cool, oasis-fresh blend of zesty lime, white blossom and clear aquatic woods",
+    "price": "120.00",
+    "notes": "wood, aquatic, fresh",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "oud",
+    "image": "image/oud/y5.webp",
+    "name": "House of Eon Syra Extrait de Parfum",
+    "description": "A radiant, silky blend of creamy white florals, soft musk and golden amber",
+    "price": "135.00",
+    "notes": "amber, musk, floral",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "oud",
+    "image": "image/oud/y6.webp",
+    "name": "Villain Bukhoor Oud Eau de Parfum",
+    "description": "A rich, sun-warmed blend of smoky bukhoor, amber and golden oud",
+    "price": "89.00",
+    "notes": "amber, oud, smoky",
+    "featured": true,
+    "is_bestseller": false
+  },
+  {
+    "category": "oud",
+    "image": "image/oud/y5.webp",
+    "name": "Smell the Garden, Originals Collection",
+    "description": "A soft, sunlit blend of white jasmine, green leaves and dewy moss",
+    "price": "70.00",
+    "notes": "jasmine, green",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "oud",
+    "image": "image/oud/y7.jpg",
+    "name": "Ajmal Oud on the Rocks",
+    "description": "A smooth, opulent blend of aged oud, warm amber and velvety spice",
+    "price": "110.00",
+    "notes": "amber, spice, oud",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "gift",
+    "image": "image/gift/g.webp",
+    "name": "Bella Vita Luxury Woman Collection (Senórita, Rosè, Date, Glam)",
+    "description": "A romantic four-piece of sweet rose, playful berries, soft musk and glowing amber",
+    "price": "100.00",
+    "notes": "amber, musk, sweet, rose, berries",
+    "featured": true,
+    "is_bestseller": false
+  },
+  {
+    "category": "gift",
+    "image": "image/gift/g1.webp",
+    "name": "Villain by brnd.me Fragrance Collection (Revolver, Snake, Oud, Desire)",
+    "description": "A dark, daring quartet of smoky woods, spiced amber, golden oud and seductive florals",
+    "price": "99.00",
+    "notes": "wood, amber, floral, spice, oud, smoky",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "gift",
+    "image": "image/gift/g2.webp",
+    "name": "Skinn Celeste Gift Set (Eau de Parfum and Deodorant)",
+    "description": "A bright, feminine duo of Celeste perfume and matching deodorant spray, with jasmine and juicy fruit notes",
+    "price": "75.00",
+    "notes": "jasmine",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "gift",
+    "image": "image/gift/g3.webp",
+    "name": "Pilgrim The Impressions Collection (Alpha, Zen, Greek God)",
+    "description": "A bold trio of rich woods, cool aquatic freshness and warm amber spice",
+    "price": "59.00",
+    "notes": "wood, amber, spice, aquatic, fresh",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "gift",
+    "image": "image/gift/g4.webp",
+    "name": "La' French Unisex Collection (Moodswing, Invoke, Happiness, Euphoria)",
+    "description": "A playful four-piece of sweet florals, soft musk, bright citrus and blooming petals",
+    "price": "100.00",
+    "notes": "musk, floral, citrus, sweet",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "gift",
+    "image": "image/gift/g5.webp",
+    "name": "Denver Exclusive Collection (Hamilton, Zenith Oud, Vogue and more)",
+    "description": "A polished set of fresh green notes, warm oud and crisp aquatic finishes",
+    "price": "55.00",
+    "notes": "oud, aquatic, fresh, green",
+    "featured": false,
+    "is_bestseller": false
+  },
+  {
+    "category": "men",
+    "image": "image/p1.jpg",
+    "name": "Midnight Noir",
+    "description": "A mysterious blend of dark spices and amber",
+    "price": "189.00",
+    "notes": "amber, spice, smoky",
+    "is_bestseller": true
+  },
+  {
+    "category": "oud",
+    "image": "image/p2.avif",
+    "name": "Golden Essence",
+    "description": "Luxurious blend of vanilla, saffron and oud",
+    "price": "245.00",
+    "notes": "vanilla, oud, sweet",
+    "is_bestseller": true
+  },
+  {
+    "category": "oud",
+    "image": "image/p3.avif",
+    "name": "Royal Oud",
+    "description": "Rare oud wood with rose and sandalwood",
+    "price": "320.00",
+    "notes": "oud, wood, rose, sandalwood",
+    "is_bestseller": true
+  },
+  {
+    "category": "women",
+    "image": "image/p4.avif",
+    "name": "Velvet Blossom",
+    "description": "Floral bouquet with jasmine and peony",
+    "price": "175.00",
+    "notes": "floral, jasmine, sweet",
+    "is_bestseller": true
+  }
+]
