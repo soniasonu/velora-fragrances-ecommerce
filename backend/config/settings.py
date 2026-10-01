@@ -96,6 +96,7 @@ DATABASES = {
         "PORT": os.environ.get("DB_PORT", "3306"),
         "OPTIONS": {
             "charset": "utf8mb4",
+            "ssl": {"ca": str(BASE_DIR / "aiven-ca.pem")},
         },
     }
 }
