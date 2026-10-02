@@ -159,8 +159,16 @@ CORS_ALLOW_CREDENTIALS = True
 # later deploy frontend and backend on genuinely different domains over
 # HTTPS, you'll need SESSION_COOKIE_SAMESITE = "None" and
 # SESSION_COOKIE_SECURE = True instead.
-SESSION_COOKIE_SAMESITE = "Lax"
-CSRF_COOKIE_SAMESITE = "Lax"
+if DEBUG:
+    SESSION_COOKIE_SAMESITE = "Lax"
+    CSRF_COOKIE_SAMESITE = "Lax"
+else:
+    SESSION_COOKIE_SAMESITE = "None"
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SAMESITE = "None"
+    CSRF_COOKIE_SECURE = True
+
+CSRF_TRUSTED_ORIGINS = os.environ.get("CSRF_TRUSTED_ORIGINS", "").split(",")
 
 # ---------------------------------------------------------------------------
 # LLM API (free tier) — used only to turn the user's sentence into
