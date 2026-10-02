@@ -5,6 +5,11 @@ A full-stack e-commerce site for a perfume brand — built with **Django, Django
 > Built as a portfolio project to demonstrate practical full-stack skills: relational data modeling, a REST API, session-based authentication, third-party payment integration, and grounded AI features that never invent data outside the real product catalog.
 
 ---
+Live Demo
+Website: https://velora-fragrances.netlify.app
+Backend API (sample endpoint): https://velora-fragrances-ecommerce-2.onrender.com/api/perfumes/
+
+Note: I host the backend on a free plan, so it goes to sleep when nobody is using it. The first time you open the site it can take around 50 seconds to load. After that it works normally.
 
 ## Features
 
