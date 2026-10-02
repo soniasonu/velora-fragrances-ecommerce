@@ -7,6 +7,7 @@ A full-stack e-commerce site for a perfume brand — built with **Django, Django
 ---
 Live Demo
 Website: https://velora-fragrances.netlify.app
+
 Backend API (sample endpoint): https://velora-fragrances-ecommerce-2.onrender.com/api/perfumes/
 
 Note: I host the backend on a free plan, so it goes to sleep when nobody is using it. The first time you open the site it can take around 50 seconds to load. After that it works normally.
