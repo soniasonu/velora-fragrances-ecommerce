@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     /* ================= Config ================= */
     // Django backend. Change this if you deploy the backend somewhere else.
-    const API_BASE = 'http://127.0.0.1:8000/api';
+    const API_BASE = (location.hostname === '127.0.0.1' || location.hostname === 'localhost')
+        ? 'http://127.0.0.1:8000/api'
+        : 'https://velora-fragrances-ecommerce-2.onrender.com/api';
 
     /* ================= Helpers ================= */
     function toast(message) {
