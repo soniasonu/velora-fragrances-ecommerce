@@ -260,7 +260,7 @@
   },
   {
     "category": "oud",
-    "image": "image/p2.avif",
+    "image": "image/s6.jpg",
     "name": "Golden Essence",
     "description": "Luxurious blend of vanilla, saffron and oud",
     "price": "245.00",
@@ -269,7 +269,7 @@
   },
   {
     "category": "oud",
-    "image": "image/p3.avif",
+    "image": "image/a5.jpg",
     "name": "Royal Oud",
     "description": "Rare oud wood with rose and sandalwood",
     "price": "320.00",
@@ -278,7 +278,7 @@
   },
   {
     "category": "women",
-    "image": "image/p4.avif",
+    "image": "image/a2.jpg",
     "name": "Velvet Blossom",
     "description": "Floral bouquet with jasmine and peony",
     "price": "175.00",
