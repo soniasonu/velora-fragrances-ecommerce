@@ -142,7 +142,7 @@ python manage.py runserver
 Open `frontend/index.html` with VS Code's **Live Server** extension (or any static file server). By default the frontend expects the backend at `http://127.0.0.1:8000` and itself runs on `http://127.0.0.1:5500` — if your Live Server uses a different port, add it to `CORS_ALLOWED_ORIGINS` in `.env` and restart the backend.
 
 ---
-
+   
 
 ## Known Limitations / Roadmap
 
@@ -157,5 +157,5 @@ This is an honest list — these are things I'm aware of and would address next,
 ---
 
 ## Author
-
+ 
 Built by Sonia — [GitHub](https://github.com/soniasonu) · [LinkedIn](https://linkedin.com/in/soniajayesh)
