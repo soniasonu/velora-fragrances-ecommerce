@@ -124,7 +124,7 @@ Edit `.env` and fill in your MySQL password. Add `GROQ_API_KEY` and `RAZORPAY_KE
 python manage.py migrate
 python manage.py seed_perfumes
 ```
-
+  
 ### 5. (Optional) Create an admin login
 
 ```bash
@@ -140,7 +140,7 @@ python manage.py runserver
 ### 7. Run the frontend
 
 Open `frontend/index.html` with VS Code's **Live Server** extension (or any static file server). By default the frontend expects the backend at `http://127.0.0.1:8000` and itself runs on `http://127.0.0.1:5500` — if your Live Server uses a different port, add it to `CORS_ALLOWED_ORIGINS` in `.env` and restart the backend.
-
+  
 ---
    
 
