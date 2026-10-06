@@ -1,47 +1,61 @@
 # Velora Fragrances
 
-A full-stack e-commerce site for a perfume brand — built with **Django, Django REST Framework and MySQL** on the backend, and plain **HTML / CSS / JavaScript** on the frontend. Includes real authentication, a shopping cart and checkout flow with **Razorpay** payments, an **AI-powered natural-language product search and chat assistant**, and a star-rating review system.
+A full-stack e-commerce platform for a fragrance brand built with Django, Django REST Framework, MySQL, and vanilla HTML/CSS/JavaScript.
 
-> Built as a portfolio project to demonstrate practical full-stack skills: relational data modeling, a REST API, session-based authentication, third-party payment integration, and grounded AI features that never invent data outside the real product catalog.
+## Why I Built This
+
+This project was built to showcase end-to-end full-stack development in a realistic business workflow. I wanted to create something that goes beyond a tutorial by implementing:
+- relational database design
+- REST API development
+- session-based authentication
+- cart and checkout flow
+- payment integration
+- AI-powered product discovery grounded in real catalog data
+- order tracking and customer-facing commerce workflows
+
+This project reflects my ability to move from product idea to working application, API design, and deployment-ready implementation.
+
+Live Demo: https://velora-fragrances.netlify.app
+
+Backend API: https://velora-fragrances-ecommerce-2.onrender.com/api/perfumes/
+
+> Note: The backend is hosted on a free plan and may go to sleep after inactivity. The first request can take around 50 seconds to load. After that, it works normally.
 
 ---
-Live Demo
-Website: https://velora-fragrances.netlify.app
-
-Backend API (sample endpoint): https://velora-fragrances-ecommerce-2.onrender.com/api/perfumes/
-
-Note: I host the backend on a free plan, so it goes to sleep when nobody is using it. The first time you open the site it can take around 50 seconds to load. After that it works normally.
 
 ## Features
 
-**Storefront**
-- Product catalog stored in MySQL, rendered live from the API (not hardcoded HTML)
-- Category filters (For Men / For Women / Oud / Gift Sets) and a Best Sellers section
-- Product detail page: large image, scent notes, quantity picker, inline reviews, and related products
-- Star ratings and review counts shown on every product card
+### Storefront
+- Product catalog stored in MySQL and rendered dynamically from the API
+- Category filters for Men, Women, Oud, and Gift Sets
+- Best Sellers section
+- Product detail page with scent notes, quantity selection, and related products
+- Product rating and review count on each card
 
-**AI Search & Chat**
-- Natural-language search bar — type a full sentence (*"woody perfume for office under $100"*) and get real, filtered results
-- Floating AI chat assistant ("Aria") that recommends products conversationally
-- Both features are grounded in the real database: the AI is only ever given actual matching products as context, and is explicitly instructed never to mention a product, price, or detail that isn't real
-- Falls back to plain keyword search automatically if the AI API is unavailable
+### AI Search & Chat
+- Natural-language search such as: "woody perfume for office under $100"
+- AI assistant ("Aria") that recommends products conversationally
+- Search and chat are grounded in the actual database instead of inventing products or prices
+- Graceful fallback to standard keyword search when AI is unavailable
 
-**Accounts**
-- Real signup/login/logout with Django sessions — passwords hashed with PBKDF2, never stored in plain text
-- Login state persists across page loads and across the whole site
+### Accounts
+- Real signup/login/logout with Django sessions
+- Passwords hashed using PBKDF2
+- Login state persists across page loads and throughout the site
 
-**Cart, Checkout & Orders**
-- Cart tied to the logged-in user's account in MySQL (not browser storage)
-- Shipping address captured and validated at checkout
+### Cart, Checkout & Orders
+- Cart is tied to the logged-in user in MySQL
+- Shipping address collection and validation at checkout
 - Two payment methods:
-  - **Card/UPI via Razorpay** (test mode) — real hosted payment popup, signature verified server-side before any order is marked paid
-  - **Cash on Delivery**
-- Order history page showing past orders, items, status, and shipping address
+  - Razorpay test mode (Card/UPI)
+  - Cash on Delivery
+- Order history with item list, shipping information, and order status
 
-**Reviews**
-- Logged-in users can rate and review any product (1–5 stars + comment)
-- One review per user per product — resubmitting updates it rather than duplicating
-- Average rating computed live and shown across the site
+### Reviews
+- Logged-in users can rate and review products
+- One review per user per product
+- Submitting again updates the existing review instead of duplicating it
+- Average rating is computed live and displayed across the site
 
 ---
 
@@ -51,16 +65,16 @@ Note: I host the backend on a free plan, so it goes to sleep when nobody is usin
 |---|---|
 | Backend | Python, Django, Django REST Framework |
 | Database | MySQL |
-| Auth | Django sessions (cookie-based) |
+| Auth | Django session-based authentication |
 | Payments | Razorpay (test mode) |
-| AI | Groq API (Llama models, OpenAI-compatible chat completions) |
-| Frontend | HTML, CSS, vanilla JavaScript (no framework/build step) |
+| AI | Groq API (Llama/OpenAI-compatible chat completions) |
+| Frontend | HTML, CSS, JavaScript |
 
 ---
 
 ## Project Structure
 
-```
+```text
 velora-fragrances/
 ├── frontend/
 │   ├── index.html
@@ -76,11 +90,39 @@ velora-fragrances/
     ├── manage.py
     ├── requirements.txt
     ├── .env.example
-    ├── velora_backend/        # Django project settings
-    ├── accounts/              # signup, login, logout, session auth
-    ├── perfumes/               # product catalog, AI search, AI chat, reviews
-    └── orders/                 # cart, checkout, Razorpay payments, order history
+    ├── aiven-ca.pem
+    ├── config/                  # Django settings and URL routing
+    ├── accounts/                # Signup, login, logout, session auth
+    ├── perfumes/                # Product catalog, reviews, AI search, AI chat
+    ├── orders/                  # Cart, checkout, Razorpay, order history
+    └── staticfiles/             # Collected static files
 ```
+
+---
+
+## Architecture
+
+### High-level flow
+```text
+Frontend (HTML/CSS/JS)
+    ↓
+Django REST API
+    ↓
+Business Logic (accounts, perfumes, orders)
+    ↓
+MySQL Database
+```
+
+### Main backend apps
+- `accounts` – signup, login, logout, session-based authentication
+- `perfumes` – product catalog, reviews, AI search, AI chat
+- `orders` – cart, checkout, Razorpay payment flow, order history
+
+### Core design decisions
+- Reviews are constrained so each user can leave only one review per product
+- Orders store a snapshot of the purchased product details for historical accuracy
+- Cart is tied to the logged-in user instead of browser storage
+- AI search is grounded in the real product catalog before generating a response
 
 ---
 
@@ -89,73 +131,164 @@ velora-fragrances/
 ### Prerequisites
 - Python 3.8+
 - MySQL Server
-- A free [Groq API key](https://console.groq.com) (optional — enables the AI search/chat; both fall back gracefully without one)
-- A free [Razorpay test-mode API key](https://dashboard.razorpay.com) (optional — enables card/UPI checkout; Cash on Delivery works without it)
+- Optional: Groq API key for AI search/chat
+- Optional: Razorpay test-mode key for card/UPI payments
 
-### 1. Clone and set up the backend
+---
 
+### 1. Clone the project
 ```bash
-cd backend
-python -m venv venv
-venv\Scripts\activate          # Windows
-# source venv/bin/activate     # Mac/Linux
+git clone https://github.com/soniasonu/velora-fragrances-ecommerce.git
+cd velora-fragrances-ecommerce/backend
+```
 
+### 2. Create a virtual environment
+```bash
+python -m venv venv
+```
+
+For Windows:
+```bash
+venv\Scripts\activate
+```
+
+For macOS/Linux:
+```bash
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+```bash
 pip install -r requirements.txt
 ```
 
-### 2. Create the database
-
+### 4. Create the database
 ```sql
 CREATE DATABASE velora_db CHARACTER SET utf8mb4;
 ```
 
-### 3. Configure environment variables
-
+### 5. Configure environment variables
 ```bash
-copy .env.example .env         # Windows
-# cp .env.example .env         # Mac/Linux
+# Windows
+copy .env.example .env
+
+# macOS/Linux
+cp .env.example .env
 ```
 
-Edit `.env` and fill in your MySQL password. Add `GROQ_API_KEY` and `RAZORPAY_KEY_ID` / `RAZORPAY_KEY_SECRET` if you have them — both are optional at first run.
+Then update `.env` with your database credentials and optional keys:
+```env
+DB_NAME=velora_db
+DB_USER=root
+DB_PASSWORD=your_mysql_password
+DB_HOST=127.0.0.1
+DB_PORT=3306
 
-### 4. Migrate and seed the catalog
+GROQ_API_KEY=your_groq_api_key
+RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_key_secret
+```
 
+> Both AI and payment integrations are optional. The app falls back gracefully if they are unavailable.
+
+### 6. Run database migrations
 ```bash
 python manage.py migrate
+```
+
+### 7. Seed the catalog
+```bash
 python manage.py seed_perfumes
 ```
-  
-### 5. (Optional) Create an admin login
 
-```bash
-python manage.py createsuperuser
-```
-
-### 6. Run the backend
-
+### 8. Run the backend
 ```bash
 python manage.py runserver
 ```
 
-### 7. Run the frontend
+Backend will be available at:
+```text
+http://127.0.0.1:8000
+```
 
-Open `frontend/index.html` with VS Code's **Live Server** extension (or any static file server). By default the frontend expects the backend at `http://127.0.0.1:8000` and itself runs on `http://127.0.0.1:5500` — if your Live Server uses a different port, add it to `CORS_ALLOWED_ORIGINS` in `.env` and restart the backend.
-  
+### 9. Run the frontend
+Open the frontend with a static file server or VS Code Live Server:
+
+```bash
+cd ../frontend
+python -m http.server 5500
+```
+
+Then open:
+```text
+http://127.0.0.1:5500
+```
+
 ---
-   
 
-## Known Limitations / Roadmap
+## API Overview
 
-This is an honest list — these are things I'm aware of and would address next, not blind spots:
+### Authentication
+- `POST /api/auth/signup/`
+- `POST /api/auth/login/`
+- `POST /api/auth/logout/`
+- `GET /api/auth/me/`
 
-- No automated test suite yet (tested manually and via direct API calls during development)
-- Cart requires login; no guest cart with merge-on-login
-- Reviews don't require a verified purchase
-- `Order.user` cascades on delete — a production version should use `PROTECT` to preserve financial records
+### Products
+- `GET /api/perfumes/`
+- `GET /api/perfumes/<id>/`
+- `POST /api/search/`
+- `POST /api/chat/`
+
+### Reviews
+- `GET /api/perfumes/<id>/reviews/`
+- `POST /api/perfumes/<id>/reviews/`
+
+### Cart and Orders
+- `GET /api/cart/`
+- `POST /api/cart/add/`
+- `POST /api/cart/update/`
+- `POST /api/cart/remove/`
+- `POST /api/orders/checkout/`
+- `POST /api/orders/verify-payment/`
+- `GET /api/orders/`
+
+---
+
+## Known Limitations
+
+This project is intentionally honest about where it can improve:
+
+- No automated test suite yet
+- Cart requires login; guest cart is not implemented
+- Reviews do not require verified purchase
+- `Order.user` cascades on delete; production would use `PROTECT`
 - No inventory/stock tracking
+- Backend is hosted on a free tier and may have cold starts
+
+---
+
+## Future Improvements
+
+- Add automated tests
+- Implement guest cart with merge-on-login
+- Track inventory and stock
+- Add email notifications for orders
+- Improve admin dashboard and reporting
+- Add wishlist and recommendation features
+- Improve deployment and autoscaling
 
 ---
 
 ## Author
- 
-Built by Sonia — [GitHub](https://github.com/soniasonu) · [LinkedIn](https://linkedin.com/in/soniajayesh)
+
+Built by Sonia
+
+- GitHub: https://github.com/soniasonu
+- LinkedIn: https://linkedin.com/in/soniajayesh
+
+---
+
+## License
+
+This project is for educational and portfolio use.
