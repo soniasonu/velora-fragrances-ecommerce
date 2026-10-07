@@ -21,7 +21,7 @@ Backend API: https://velora-fragrances-ecommerce-2.onrender.com/api/perfumes/
 
 > Note: The backend is hosted on a free plan and may go to sleep after inactivity. The first request can take around 50 seconds to load. After that, it works normally.
 
----
+---  
 
 ## Features
 
