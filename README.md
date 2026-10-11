@@ -98,7 +98,7 @@ velora-fragrances/
     └── staticfiles/             # Collected static files
 ```
 
----
+---  
 
 ## Architecture
 
