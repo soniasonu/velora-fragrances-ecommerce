@@ -151,7 +151,7 @@ For Windows:
 ```bash
 venv\Scripts\activate
 ```
-
+  
 For macOS/Linux:
 ```bash
 source venv/bin/activate
