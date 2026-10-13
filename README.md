@@ -58,6 +58,10 @@ Backend API: https://velora-fragrances-ecommerce-2.onrender.com/api/perfumes/
 - Average rating is computed live and displayed across the site
 
 ---
+## Screenshots
+<img width="1903" height="943" alt="Screenshot 2026-10-02 184439" src="https://github.com/user-attachments/assets/44ccb109-d542-4f16-95e5-c135e834286d" />
+
+---
 
 ## Tech Stack
 
