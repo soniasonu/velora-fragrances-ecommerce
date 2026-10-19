@@ -10,7 +10,7 @@ This project was built to showcase end-to-end full-stack development in a realis
 - session-based authentication
 - cart and checkout flow
 - payment integration
-- AI-powered product discovery grounded in real catalog data
+- AI-powered product discovery grounded in real catalog data          
 - order tracking and customer-facing commerce workflows
 
 This project reflects my ability to move from product idea to working application, API design, and deployment-ready implementation.
