@@ -299,3 +299,6 @@ Built by Sonia
 ## License
 
 This project is for educational and portfolio use.
+
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
