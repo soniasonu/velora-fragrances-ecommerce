@@ -8,7 +8,7 @@ This project was built to showcase end-to-end full-stack development in a realis
 - relational database design
 - REST API development
 - session-based authentication
-- cart and checkout flow
+- cart and checkout flow   
 - payment integration
 - AI-powered product discovery grounded in real catalog data          
 - order tracking and customer-facing commerce workflows
