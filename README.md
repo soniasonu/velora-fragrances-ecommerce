@@ -24,8 +24,14 @@ Backend API: https://velora-fragrances-ecommerce-2.onrender.com/api/perfumes/
 --- 
 ## Screenshot
 <img width="400" alt="v" src="https://github.com/user-attachments/assets/fa70a675-2e24-4f3a-9dff-787c1d05d196" />
-  
-                
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/5cafe326-f01a-4187-92b7-2b861ed78069" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/1be1c859-ad28-4a26-952a-b11bc34dfdf5" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/dc00bbbb-98b5-455b-ba46-363ed15db183" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/6fdf4185-12f7-4d49-93b8-4c197075daf3" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/cc0b8f09-648d-4d2e-b81a-fb781498097f" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/72527ced-fb1b-4545-8803-80f54f19fe1d" />
+
+          
 ## Features
 
 ### Storefront
