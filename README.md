@@ -23,6 +23,7 @@ Backend API: https://velora-fragrances-ecommerce-2.onrender.com/api/perfumes/
 
 --- 
 ## Screenshot
+
 <img width="400" alt="v" src="https://github.com/user-attachments/assets/fa70a675-2e24-4f3a-9dff-787c1d05d196" />
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/5cafe326-f01a-4187-92b7-2b861ed78069" />
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/1be1c859-ad28-4a26-952a-b11bc34dfdf5" />
@@ -64,10 +65,6 @@ Backend API: https://velora-fragrances-ecommerce-2.onrender.com/api/perfumes/
 - One review per user per product
 - Submitting again updates the existing review instead of duplicating it
 - Average rating is computed live and displayed across the site
-
----
-## Screenshots
-
 
 ---
 
