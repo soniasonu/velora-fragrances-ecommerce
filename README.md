@@ -266,8 +266,6 @@ http://127.0.0.1:5500
 
 ## Known Limitations
 
-This project is intentionally honest about where it can improve:
-
 - No automated test suite yet
 - Cart requires login; guest cart is not implemented
 - Reviews do not require verified purchase
